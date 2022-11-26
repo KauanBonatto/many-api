@@ -2,6 +2,9 @@
 /dist
 /node_modules
 
+#text files
+postgresConnectionBackup.txt
+
 # Logs
 logs
 *.log

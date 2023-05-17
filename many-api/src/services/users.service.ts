@@ -17,7 +17,6 @@ export class UsersService {
   ) {}
 
   async findAll(): Promise<User[] | false> {
-
     const usersList = this.userModel.findAll();
     if(usersList) return usersList;
 

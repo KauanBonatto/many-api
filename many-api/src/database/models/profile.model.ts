@@ -1,7 +1,7 @@
 import { Column, Model, Table } from 'sequelize-typescript';
 
 @Table
-export class User extends Model {
+export class Profile extends Model {
   @Column({ 
     primaryKey: true,
     autoIncrement: true,
@@ -10,13 +10,22 @@ export class User extends Model {
   id: number;
   
   @Column
+  username: string;
+
+  @Column
   email: string;
 
   @Column
   phone: string;
 
   @Column
-  password: string;
+  profileImage: string;
+
+  @Column
+  backgroundImage: string;
+
+  @Column
+  signo: string;
 
   @Column
   createdAt: Date;
